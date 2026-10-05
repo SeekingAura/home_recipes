@@ -1,0 +1,122 @@
+{
+    "[restructuredtext]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 3
+    },
+    "[python]": {
+        "editor.rulers": [
+            {
+                "column": 79,
+                "color": "#eeff0070"
+            },
+            {
+                "column": 119,
+                "color": "#00ff0067"
+            }
+        ],
+        "editor.formatOnType": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        
+    },
+    "autoDocstring.docstringFormat": "sphinx",
+    "python.languageServer": "Pylance",
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+    "python.analysis.typeCheckingMode": "strict",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingTypeStubs": "information",
+        "reportUnknownMemberType": "information"
+    },
+    "isort.check": true,
+    // Allow python with virtual env on powershell
+    // Editor
+    "editor.defaultFormatter": null,
+    "editor.renderWhitespace": "all", 
+    "files.exclude": {
+        // "**/.venv": true,
+        "**/__pycache__/": true,
+    },
+    "search.exclude": {
+        "**/__pycache__/": true,
+        // "**/.venv": true,
+        "**/locale": true,
+    },
+    "files.eol": "\r\n",
+    // all .env files will assosiates with dotenv type will have env icon
+    "files.associations": {
+        "*.env*": "dotenv",
+    },
+    "editor.scrollbar.vertical": "auto",
+    "editor.overviewRulerBorder": true,
+    "editor.minimap.enabled": false,
+    // Debug breakpoints visibility
+    "editor.glyphMargin": false, 
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": "active",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.statusBar.visible": true,
+    "workbench.editor.pinnedTabsOnSeparateRow": true,
+    "workbench.activityBar.location": "top",
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "breadcrumbs.filePath": "on",
+    "breadcrumbs.symbolSortOrder": "type",
+    // set .env ico for dotenv type case
+    "material-icon-theme.languages.associations": {
+        "dotenv": "tune",
+    },
+    // Terminal
+    "terminal.integrated.sendKeybindingsToShell": false,
+    // cSpell
+    "cSpell.diagnosticLevel": "Information",
+    "cSpell.customDictionaries": {
+        "readme": {
+            "name": "readme",
+            "path": "${workspaceRoot}/.vscode/cspell-readme.txt",
+            "description": "Words used at markdown files",
+            "addWords": true,
+            "scope":"workspace",
+            "noSuggest": true,
+        },
+        "python": {
+            "name": "python",
+            "path": "${workspaceRoot}/.vscode/cspell-python.txt",
+            "description": "Words used at python files",
+            "addWords": true,
+            "scope":"workspace",
+            "noSuggest": true,
+        },
+        "project-vars": {
+            "name": "project-vars",
+            "path": "${workspaceRoot}/.vscode/cspell-project-vars.txt",
+            "description": "Words used at project-vars files",
+            "addWords": true,
+            "scope":"workspace",
+            "noSuggest": true,
+          },
+          "project-accents": {
+            "name": "project-accents",
+            "path": "${workspaceRoot}/.vscode/cspell-project-accents.txt",
+            "description": "Words used for skip spanish accents",
+            "addWords": true,
+            "scope":"workspace",
+            "noSuggest": true,
+          },
+    },
+    "cSpell.dictionaries": [
+        // To disable a custom dict set !name, by default are enabled
+        // "!readme"
+    ],
+    // WSL case
+    "remote.extensionKind": {
+        // Allow to use extensions on host machine from any workspace
+        "quicktype.quicktype": [ "ui" ],
+        "mongodb.mongodb-vscode": ["ui"],
+        // Use docker were worskpace is located (allow WSL machine)
+        "ms-azuretools.vscode-docker": [ "workspace" ],
+    },
+    "remote.autoForwardPorts": false,
+    "cSpell.language": "en",
+    "python-envs.defaultEnvManager": "ms-python.python:poetry",
+    "python-envs.defaultPackageManager": "ms-python.python:poetry",
+}
